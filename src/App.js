@@ -1,10 +1,10 @@
 import React from 'react';
 import About from './components/About';
 import NavBar from './components/Navbar';
-import {
-  ChakraProvider,
-  Button
-} from '@chakra-ui/react';
+import Portfolio from './components/Portfolio';
+import Info from './PortfolioItems';
+
+import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 // import logo from './logo.svg';
 import {BrowserRouter as Router} from "react-router-dom";
@@ -16,7 +16,8 @@ function App() {
     <ChakraProvider>
       <Router>
         <NavBar />
-        {/* <About /> */}
+        <About />
+        <Portfolio mgInfo={Info} />
         {/* <Button>Hello</Button> */}
       </Router>
     </ChakraProvider>
