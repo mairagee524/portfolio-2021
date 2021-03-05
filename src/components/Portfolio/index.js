@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 
 function Portfolio(props) {
-    console.log(props);
     return (
         <Box>
             <h1>Portfolio</h1>

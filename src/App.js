@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/About';
 import NavBar from './components/Navbar';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Info from './PortfolioItems';
 
@@ -19,6 +20,7 @@ function App() {
         <NavBar />
         <About />
         <Portfolio mgInfo={Info} />
+        <Contact />
         <Footer mgInfo={Info} />
         {/* <Button>Hello</Button> */}
       </Router>
