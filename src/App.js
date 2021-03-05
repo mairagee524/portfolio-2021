@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/About';
 import NavBar from './components/Navbar';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import Info from './PortfolioItems';
 
 import { ChakraProvider } from '@chakra-ui/react';
@@ -18,6 +19,7 @@ function App() {
         <NavBar />
         <About />
         <Portfolio mgInfo={Info} />
+        <Footer mgInfo={Info} />
         {/* <Button>Hello</Button> */}
       </Router>
     </ChakraProvider>

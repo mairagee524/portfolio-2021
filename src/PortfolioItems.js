@@ -12,8 +12,8 @@ let mgInfo = {
             liveUrl: "https://protected-everglades-09109.herokuapp.com/"
         },
         {
-            key: 1,
-            popUp: '01',
+            key: 2,
+            popUp: '02',
             portName: "Soma Kitchen", 
             portDesc: "A local restaurant in Downtown Los Angeles requested a new modern look for the site",
             portTech: "Materialize, JavaScript, jQuery, Twitter API, OpenLayer API",
@@ -23,8 +23,8 @@ let mgInfo = {
             liveUrl: "https://protected-everglades-09109.herokuapp.com/"
         },
         {
-            key: 1,
-            popUp: '01',
+            key: 3,
+            popUp: '03',
             portName: "Soma Kitchen", 
             portDesc: "A local restaurant in Downtown Los Angeles requested a new modern look for the site",
             portTech: "Materialize, JavaScript, jQuery, Twitter API, OpenLayer API",
@@ -36,16 +36,22 @@ let mgInfo = {
     ],
     socialLinks: [
         {
+            key: "001",
+            name: "linkedin",
+            url: "https://www.linkedin.com/in/mairagarcia524/",
+            className: "fa fa-linkedin",
+        },
+        {
+            key: "002",
             name: "github",
-            url: "https://twitter.com/latinacoder24",
+            url: "https://github.com/mairagee524",
+            className: "fa fa-github",
         },
         {
-            name: "linkedIn",
-            url: "https://twitter.com/latinacoder24",
-        },
-        {
+            key: "003",
             name: "twitter",
             url: "https://twitter.com/latinacoder24",
+            className: "fa fa-twitter",
         }
     ],
 }
