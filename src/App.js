@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Info from './PortfolioItems';
 
-import { ChakraProvider } from '@chakra-ui/react';
+// import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 // import logo from './logo.svg';
 import {BrowserRouter as Router} from "react-router-dom";
@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
   return (
-    <ChakraProvider>
+    // <ChakraProvider>
       <Router>
         <NavBar />
         <About />
@@ -24,7 +24,7 @@ function App() {
         <Footer mgInfo={Info} />
         {/* <Button>Hello</Button> */}
       </Router>
-    </ChakraProvider>
+    // </ChakraProvider>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
