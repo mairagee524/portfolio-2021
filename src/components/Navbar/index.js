@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import MenuItem from './MenuItem';
-import ProfilePic from '../../img/profile-pic.png';
-import LogoPic from '../../img/mg-logo.png'
+// import ProfilePic from '../../img/profile-pic.png';
+// import LogoPic from '../../img/mg-logo.png'
 
 
 function Navbar () {
 
-    const [menuItemActive, setMenuItemActive] = useState( 'MenuItemActive');
+    const [menuItemActive, setMenuItemActive] = useState('');
     
     // }
     // class Navbar extends Component {
@@ -18,8 +18,8 @@ function Navbar () {
     //     }
 
 
-    const menuItemActive = (x) => {
-        if(menuItemActive.length > 0){
+    const itemActive = (x) => {
+        if (menuItemActive.length > 0){
             document.getElementById(menuItemActive).classList.remove('active');
         }
         setMenuItemActive({'MenuItemActive':x}, () => {
@@ -38,17 +38,17 @@ function Navbar () {
 
     return (
         <nav className="glass">
-            <img src={ProfilePic} className="profile-pic" alt="girl inside a circle"/>
+            {/* <img src={ProfilePic} className="profile-pic" alt="girl inside a circle"/>
 
-            <img src={LogoPic} className="logo-pic" alt="logo with initials 'MG'"/>
+            <img src={LogoPic} className="logo-pic" alt="logo with initials 'MG'"/> */}
             {/* <h2>Maira <mark>Garcia</mark></h2>
             <p>Bilingual Full-Stack Developer</p> */}
             <ul>
-                <MenuItem item="Home" tolink="/" activec={menuItemActive}/>
-                <MenuItem item="About" tolink="/about" activec={menuItemActive}/>
-                <MenuItem item="Portfolio" tolink="/portfolio" activec={menuItemActive}/>
-                {/* <MenuItem item="Testimonial" tolink="/testimonial" activec={menuItemActive}/> */}
-                <MenuItem item="Contact" tolink="/contact" activec={menuItemActive}/>
+                <MenuItem item="Home" tolink="/" activec={itemActive}/>
+                <MenuItem item="About" tolink="/about" activec={itemActive}/>
+                <MenuItem item="Portfolio" tolink="/portfolio" activec={itemActive}/>
+                {/* <MenuItem item="Testimonial" tolink="/testimonial" activec={itemActive}/> */}
+                <MenuItem item="Contact" tolink="/contact" activec={itemActive}/>
             </ul>
         </nav>
     )

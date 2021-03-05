@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+
+/* 
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
+
+nav {
+  width: 20%;
+	height: 90%;
+	position: absolute;
+	top: 4%;
+	left: 4%; 
+	padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+
+nav ul {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  width: 90%;
+  font-size:var(--fontsize-nav) ;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul li {
+  margin: 5px;
+  padding: 11px;
+  border-radius: 10px;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: #ffffff80;
+}
+
+a {
+  text-decoration: none;
+} */

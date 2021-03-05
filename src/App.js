@@ -1,18 +1,24 @@
 import React from 'react';
-import About from './components/About'
+import About from './components/About';
+import NavBar from './components/Navbar';
 import {
   ChakraProvider,
   Button
 } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 // import logo from './logo.svg';
+import {BrowserRouter as Router} from "react-router-dom";
+
 import './App.css';
 
 function App() {
   return (
     <ChakraProvider>
-      <About />
-      <Button>Hello</Button>
+      <Router>
+        <NavBar />
+        {/* <About /> */}
+        {/* <Button>Hello</Button> */}
+      </Router>
     </ChakraProvider>
     // <div className="App">
     //   <header className="App-header">
