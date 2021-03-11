@@ -84,6 +84,11 @@ a {
   text-decoration: none;
 } */
 
+* {
+  background: #ecf0f1;
+  height: 100vh;
+  display: flex
+}
 
 li {
   list-style: none;
