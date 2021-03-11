@@ -83,3 +83,22 @@ nav ul li:hover {
 a {
   text-decoration: none;
 } */
+
+
+li {
+  list-style: none;
+}
+
+.nav-box {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .nav-box {
+    top: 50%;
+    left: 20px;
+  }
+}
