@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
-import ProfilePic from '../../img/profile-pic.png';
+import ProfilePic from '../../../img/profile-pic.png';
 
 function About() {
     return (

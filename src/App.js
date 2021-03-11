@@ -1,9 +1,9 @@
 import React from 'react';
-import About from './components/About';
+import About from './components/MainView/About';
 import NavBar from './components/Navbar';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Portfolio from './components/MainView/Portfolio';
+import Contact from './components/MainView/Contact';
+import Footer from './components/MainView/Footer';
 import Info from './PortfolioItems';
 
 // import { ChakraProvider } from '@chakra-ui/react';
