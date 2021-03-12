@@ -1,4 +1,4 @@
-let mgInfo = {
+let PortItems = {
     portfolio: [
         {
             key: 1,
@@ -56,4 +56,4 @@ let mgInfo = {
     ],
 }
 
-export default mgInfo;
+export default PortItems;

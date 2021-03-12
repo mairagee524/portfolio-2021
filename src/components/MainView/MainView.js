@@ -2,9 +2,9 @@ import React from 'react';
 import Routes from '../../Routes';
 import { Box } from '@chakra-ui/react';
 
-const MainView = () => {
+function MainView(props) {
   return (
-    <Box className="main-view">
+    <Box {...props}>
       <Routes />
     </Box>
   )
