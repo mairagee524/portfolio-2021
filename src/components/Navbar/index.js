@@ -1,11 +1,12 @@
 import React from 'react';
 // import MenuItem from './MenuItem';
 import { Box, Stack, Link } from '@chakra-ui/react';
+import { Link as RouterLink} from 'react-router-dom';
 
 // import ProfilePic from '../../img/profile-pic.png';
 // import LogoPic from '../../img/mg-logo.png'
 
-function Navbar () {
+function Navbar (props) {
 
     // const [menuItemActive, setMenuItemActive] = useState('');
     
@@ -19,17 +20,18 @@ function Navbar () {
     // }
 
     return (
-        <Box className="nav-box">
+        <Box {...props} >
             {/* <img src={ProfilePic} className="profile-pic" alt="girl inside a circle"/>
+
             <img src={LogoPic} className="logo-pic" alt="logo with initials 'MG'"/> */}
             {/* <h2>Maira <mark>Garcia</mark></h2>
             <p>Bilingual Full-Stack Developer</p> */}
             <Stack direction={["row", "column"]} >
-                <Link item="Home" tolink="/"/>
-                <Link item="About" tolink="/about"/>
-                <Link item="Portfolio" tolink="/portfolio"/>
-                {/* <Link item="Testimonial" tolink="/testimonial"/> */}
-                <Link item="Contact" tolink="/contact"/>
+                <Link as={RouterLink} to="/">Home</Link>
+                <Link as={RouterLink} to="/about">About</Link>
+                <Link as={RouterLink} to="/portfolio">Portfolio</Link>
+                {/* <Link as={RouterLink} item="Testimonial" to="/testimonial"/></Link> */}
+                <Link as={RouterLink} to="/contact">Contact</Link>
             </Stack>
         </Box>
     )

@@ -6,7 +6,7 @@ import About from './components/MainView/About';
 import Contact from './components/MainView/Contact';
 import Portfolio from './components/MainView/Portfolio';
 
-function Routes() {
+const Routes = () => {
   return (
     <Switch>
       <Route exact path='/about' component={About} />

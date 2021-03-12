@@ -7,8 +7,8 @@ import React from 'react';
 // import Info from './PortfolioItems';
 
 import Navbar from './components/Navbar';
-import MainView from './components/MainView/MainView'
-
+import MainView from './components/MainView/MainView';
+import { Box } from '@chakra-ui/react';
 
 const App = () => {
   // const backgroundImage = 'images/mountain.jpg';
@@ -41,16 +41,16 @@ const App = () => {
   // }
 
   return (
-    <App>
-      <Navbar
+    <Box>
+      <Navbar background={{base: "blue", lg:"red"}}
         // backgroundImage={backgroundImage}
-        sidebarHeader={sidebarHeader}
-        menuItems={menuItems}
+        // sidebarHeader={sidebarHeader}
+        // menuItems={menuItems}
         // fonts={fonts}
         // colorPalette={Palette.brown}
       />
       <MainView />
-    </App>
+    </Box>
   );
 }
 
