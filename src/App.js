@@ -9,19 +9,19 @@ const App = () => {
     <Flex>
       <Box width={{lg: "30%"}}>
         <Navbar 
-          background={{base: "blue", lg:"red"}}
+          bg={{base: "blue", lg:"red"}}
           pos="fixed"
           overflow="hidden"
-          width={{base: "100%", lg: "20%"}}
-          height={{lg: "225px"}}
+          w={{base: "100%", lg: "20%"}}
+          h={{lg: "340px"}}
           left={{lg: "20px"}}
           bottom={{base: "0"}}
-          top={{lg: "50%"}}
+          top={{lg: "30%"}}
         />
       </Box>
   
-      <Box width={{lg: "70%"}}> 
-        <MainView width={{base: "100%", lg: "70%"}}/>
+      <Box w={{lg: "70%"}}> 
+        <MainView w={{base: "100%", lg: "70%"}}/>
       </Box>
     </Flex>
   );
