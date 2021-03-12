@@ -1,6 +1,6 @@
 import React from 'react';
 // import MenuItem from './MenuItem';
-import { Box, Stack, Link } from '@chakra-ui/react';
+import { Box, Stack, Link, Center } from '@chakra-ui/react';
 import { Link as RouterLink} from 'react-router-dom';
 
 // import ProfilePic from '../../img/profile-pic.png';
@@ -9,11 +9,23 @@ import { Link as RouterLink} from 'react-router-dom';
 function Navbar(props) {
     return (
         <Box {...props} >
-            <Stack direction={["row", "column"]} >
-                <Link as={RouterLink} to="/">Home</Link>
-                <Link as={RouterLink} to="/about">About</Link>
-                <Link as={RouterLink} to="/portfolio">Portfolio</Link>
-                <Link as={RouterLink} to="/contact">Contact</Link>
+            <Stack direction={["row", "column"]} 
+            justify="space-around">
+                <Center h="50px">
+                    <Link as={RouterLink} to="/">Home</Link>
+                </Center>
+
+                <Center h="50px">
+                    <Link as={RouterLink} to="/about">About</Link>
+                </Center>
+
+                <Center h="50px">
+                    <Link as={RouterLink} to="/portfolio">Portfolio</Link>
+                </Center>
+
+                <Center h="50px">
+                    <Link as={RouterLink} to="/contact">Contact</Link>
+                </Center>
             </Stack>
         </Box>
     )

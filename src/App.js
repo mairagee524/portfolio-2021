@@ -8,13 +8,15 @@ const App = () => {
   return (
     <Flex>
       <Box width={{lg: "30%"}}>
-        <Navbar background={{base: "blue", lg:"red"}}
-        pos="fixed"
-        overflow="hidden"
-        width={{base: "100%", lg: "20%"}}
-        left={{lg: "20px"}}
-        bottom={{base: "0"}}
-        top={{lg: "50%"}}
+        <Navbar 
+          background={{base: "blue", lg:"red"}}
+          pos="fixed"
+          overflow="hidden"
+          width={{base: "100%", lg: "20%"}}
+          height={{lg: "225px"}}
+          left={{lg: "20px"}}
+          bottom={{base: "0"}}
+          top={{lg: "50%"}}
         />
       </Box>
   
