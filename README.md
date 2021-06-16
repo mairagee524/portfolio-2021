@@ -1,2 +1,2 @@
 # portfolio-2021
-A new revamped version of my portfolio
+This will be a new revamped version of my portfolio. It will be responsive with a modern look. 
